@@ -902,8 +902,8 @@ def gradio_interface():
 
                 fetch_user_tasks_button.click(handle_fetch_user_tasks, inputs=fetch_user_tasks_id, outputs=fetch_user_tasks_output)
 
-            with gr.TabItem("Gig Worker Management"):
-                gr.Markdown("Manage gig worker profiles.")
+            with gr.TabItem("Ninja Management"):
+                gr.Markdown("Manage Ninja profiles.")
                 
                 level_options = ["Genin", "Chunin", "Jonin", "ANBU", "Kage", "Sage"]
                 rating_score_options = list(range(1, 6))
