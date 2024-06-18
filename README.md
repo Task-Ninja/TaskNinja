@@ -68,15 +68,15 @@ On the back-end, we went with Node.js and Express for our server. Node.js is kno
 
 For our database, we chose MongoDB. As a NoSQL database, MongoDB gave us the flexibility to store and query unstructured data, which was important for a platform where tasks and user profiles can vary widely. MongoDB's document model also aligned well with the way we structured our data in the React front-end.
 
-But the heart of TaskNinja is our AI system. We knew we needed a powerful language model to analyze tasks and match them with the right professionals. We chose OpenAI's Generative AI, one of the most advanced language models available. Generative AI's ability to understand context and generate human-like text was crucial for analyzing task descriptions and professional profiles.
+But the heart of TaskNinja is our AI system. We knew we needed a powerful language model to analyze tasks and match them with the right professionals. We chose Google Generative AI, one of the most advanced language models available. Generative AI's ability to understand context and generate human-like text was crucial for analyzing task descriptions and professional profiles.
 
-We trained Generative AI on a massive dataset of real-world tasks and professional profiles. This involved collecting data from various freelancing platforms, job boards, and our own user base. We preprocessed this data, cleaning it and structuring it in a way that would be optimal for training the model.
+We trained Gemini on a massive dataset of real-world tasks and professional profiles. This involved collecting data from various freelancing platforms, job boards, and our own user base. We preprocessed this data, cleaning it and structuring it in a way that would be optimal for training the model.
 
 One of the biggest challenges we faced was ensuring that the model was making unbiased, accurate matches. To address this, we employed techniques like adversarial training and bias regularization. These techniques help the model learn to make decisions based on relevant features, while ignoring irrelevant features that could lead to biased outcomes.
 
 We also fine-tuned LLM for specific subtasks. For example, we trained separate models for analyzing task descriptions, evaluating professional profiles, and generating task recommendations. This allowed each model to specialize in its specific function, improving overall performance.
 
-To integrate LLM with our Node.js back-end, we used the OpenAI API. This allowed us to send requests to the LLM model and receive responses in real-time. We built a robust system for handling these API calls, including rate limiting and error handling to ensure the system remains stable even under high load.
+To integrate LLM with our Node.js back-end, we used the Gemini API. This allowed us to send requests to the LLM model and receive responses in real-time. We built a robust system for handling these API calls, including rate limiting and error handling to ensure the system remains stable even under high load.
 
 Using Chainlink for AI Integration:
 To bridge the gap between our off-chain AI computations and on-chain smart contract execution, we integrated Chainlink Functions. This allows us to perform complex AI-driven analysis and statistical computations off-chain and then securely bring those results back on-chain to inform our smart contracts. For instance, when our AI matches a task with a professional, Chainlink ensures that this decision-making process is verifiable and tamper-proof, enhancing the trustworthiness of the TaskNinja platform
