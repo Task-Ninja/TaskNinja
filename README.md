@@ -2,6 +2,8 @@ Try Out-: [Here the Figma Prototype](https://www.figma.com/proto/9Vlwq1UXZsVFRd5
 
 TryOut-: [Here Our Demo Ai and Basic Functionality](https://huggingface.co/spaces/TaskNinja/TaskNinja)
 
+Landing Page-: [Get on Early Access List](https://task-ninja.github.io/task-ninja)
+
 ## Inspiration
 
 In today's fast-paced world, we are constantly juggling multiple responsibilities - work, school, family, and personal life. It's a never-ending cycle of deadlines, appointments, and to-do lists. As a team of busy professionals , we intimately understand the stress and anxiety that comes with trying to keep up with it all.
